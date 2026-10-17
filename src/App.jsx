@@ -4,6 +4,7 @@ import PinLock from './components/PinLock.jsx';
 import ErrorBoundary from './components/ErrorBoundary.jsx';
 import Layout from './components/Layout.jsx';
 import PlayTime from './pages/PlayTime.jsx';
+import Airdrop from './pages/Airdrop.jsx';
 
 const SESSION_KEY = 'xplay_unlocked';
 const ACTOR_KEY = 'xplay_actor';
@@ -51,6 +52,7 @@ export default function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<PlayTime />} />
+          <Route path="/airdrop" element={<Airdrop />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Layout>

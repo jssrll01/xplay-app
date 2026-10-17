@@ -1,8 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Gamepad2 } from 'lucide-react';
+const Game = () => <span style={{ fontSize: 16, lineHeight: 1 }}>🎮</span>;
 
-const items = [['/', 'Play Time', Gamepad2]];
+const items = [['/', 'Play Time', Game], ['/airdrop', 'Airdrop 88', Game]];
 
 export default function Sidebar() {
   return (
